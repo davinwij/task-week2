@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Project</title>
+        <link rel="stylesheet" href="style-5.css">
+        <link rel="icon" href="assets/logo.png">
+    </head>
+
+    <body>
+        <nav>
+            <div class="left-side">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="">
+                </a>
+        
+                <ol>
+                    <li style="list-style-type: none;">
+                        <a href="task-week-3.html" class="home" target="blank">Home</a>
+                    </li>
+                    <li style="list-style-type: none;">
+                        <a href="" target="blank" class="project"><b>My Project</b></a>
+                    </li>
+                </ol>
+            </div>    
+
+            <div class="right-side">
+                <a href="task-week-2.html" target="blank">
+                    Contact Me  
+                </a>
+            </div>
+        </nav>
+
+        <section class="container-1">
+            <div class="form-container">    
+                <form onsubmit="addProjects(event)">
+                    <h4>ADD MY PROJECT</h4>
+    
+                        <div class="project-input">
+                            <label for="project">Project Name</label>
+                            <input type="text" id="project" required>
+                        </div>
+    
+                        <div class="date-input">
+                            <div class="start-date">
+                                <label for="start-input">Start Date</label>
+                                <input type="date" required id="start-input">
+                            </div>
+                            <div class="end-date">
+                                <label for="end-input">End Date</label>
+                                <input type="date" required id="end-input">
+                            </div>
+                        </div>
+    
+                        <div class="desc-input">
+                            <label for="desc">Description</label>
+                            <textarea name="desc" id="description" cols="30" rows="10" ></textarea>
+                        </div>
+    
+                        <div class="tech-input">
+                            <label for="check-box-detail">Technologies</label>  
+                            <div class="left-checkbox">
+                                <div>
+                                    <input value="node" type="checkbox" id="node">
+                                    <label for="node">Node JS</label>                            
+                                </div>
+                                <div>
+                                    <input value="react" type="checkbox" id="react">
+                                    <label for="react">React JS</label>
+                                </div>
+                            </div>          
+
+                            <div class="right-checkbox">
+                                <div>
+                                    <input value="next" type="checkbox" id="next">
+                                    <label for="next">Next JS</label>
+                                </div>
+                                <div>
+                                    <input value="type" type="checkbox" id="type">
+                                    <label for="type">Type Script</label>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="upload-img">
+                            <label for="">Upload Image</label>
+                            <label class="input-img" for="upload">
+                               <p>choose</p>                                
+                               <img src="assets/file.png" alt="">      
+                            </label>
+                            <input type="file" id="upload" hidden>
+                        </div>
+    
+                        <div class="btn-submit">
+                            <button>submit</button>
+                        </div>                
+                </form>
+            </div>
+        </section>
+
+        <section class="container-2">
+            <h4>MY PROJECT</h4>
+            <div class="project-list" id="project-list">
+                <div class="project-list-item">
+                    <a href="project-detail.html">
+                        <div class="card-img">
+                            <img src="assets/my-img.jpg" alt="">
+                        </div>                    
+                        <div class="card-title">
+                            <h3>Dumbways Mobile App - 2021</h3>
+                        </div>    
+                        <div class="card-drt">
+                            <p>durasi 3 bulan</p>
+                        </div>
+                        <div class="card-desc">
+                            <p>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Repellat corporis magni 
+                            suscipit libero exercitationem! Aperiam 
+                            excepturi natus ad nihil cum! Repellat corporis magni 
+                            suscipit libero exercitationem! Aperiam 
+                            excepturi natus ad nihil cum</p>
+                        </div>
+                        <div class="card-icon">
+                            <img id="next" src="assets/next.png" alt="">
+                            <img id="node" src="assets/node.png" alt="">
+                            <img id="react" src="assets/react.png" alt="">
+                            <img id="type" src="assets/type.png" alt="">
+                        </div>
+                    </a>
+                    <div class="card-btn">
+                        <div class="edit-btn">
+                            <button>edit</button>
+                        </div>
+                        <div class="del-btn">
+                            <button>delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="project.js"></script>
+    </body>
+    
+</html>
